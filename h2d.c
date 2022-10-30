@@ -13,6 +13,7 @@ int deci_out;
 char ref0[17] = {"0123456789ABCDEF\0"};
 char ref0[17] = {"0123456789abcdef\0"};
 
+// Convert the hexadecimal string into a decimal integer
 void trans(void){
   int i, j, a, b;
   i=b=0;
@@ -29,6 +30,7 @@ void trans(void){
   deci_out=b;
 }
 
+// Get a hexadecimal string from user, print out the decimal equivalent
 int main(){
   int c, i;
   i=0;
